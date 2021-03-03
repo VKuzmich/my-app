@@ -1,9 +1,9 @@
 import  React from 'react';
 
-const userOutput = () => {
+const userOutput = (props) => {
     return (
         <div>
-            <p> Rendon tasks</p>
+            <p> Rendon name: {props.userName}</p>
             <p>One more tasks</p>
         </div>
     )

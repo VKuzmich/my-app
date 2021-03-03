@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
+// import Person from './Person/Person';
 
 
 class App extends Component {
@@ -9,9 +10,9 @@ class App extends Component {
         return (
             <div className='App'>
                 <UserInput />
-                <UserOutput />
-                <UserOutput />
-                <UserOutput />
+                <UserOutput userName='Ferdinand' />
+                <UserOutput userName='Dima'/>
+                <UserOutput userName='Serg'/>
             </div>
         )
     }
