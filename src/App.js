@@ -6,12 +6,21 @@ import UserOutput from './UserOutput/UserOutput';
 
 
 class App extends Component {
+
+    state = {
+        username: "Denmark"
+    }
+
+    usernameChangeHandler = (event) => {
+        this.setState({username: event.target.value});
+    }
+
     render() {
         return (
             <div className='App'>
-                <UserInput />
-                <UserOutput userName='Ferdinand' />
-                <UserOutput userName='Dima'/>
+                <UserInput changed={this.usernameChangeHandler}/>
+                <UserOutput userName={this.state.username} />
+                <UserOutput userName={this.state.username} />
                 <UserOutput userName='Serg'/>
             </div>
         )
