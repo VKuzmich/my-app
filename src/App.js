@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Radium, { StyleRoot } from 'radium';
-// import UserInput from './UserInput/UserInput';
-// import UserOutput from './UserOutput/UserOutput';
+
 import Person from './Person/Person';
 
 
@@ -119,7 +117,7 @@ class App extends Component {
       }
 
       return (
-          <StyleRoot>
+
               <div className="App">
                 <h1>Hi! i am react app!!!</h1>
                 <p className={classes.join(' ')}>Just paragraph!!!</p>
@@ -128,10 +126,10 @@ class App extends Component {
                     onClick={this.togglePersonsHandler}>Switch Name</button>
                   {persons}
               </div>
-          </StyleRoot>
+
       );
       //   return React.createElement('div',  {className: 'App'}, React.createElement('h1', null, 'Hi, i\'m React App!!!') )
     }
 }
 
-export default Radium(App);
+export default App;
